@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<link rel="stylesheet" type="text/css" href="music.css">
+	<link rel="stylesheet" type="text/css" href="music_responsive.css">
+	<link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+	<!-- Adding Font Family -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+	<header class="body-header">
+		<nav>
+			<div class="logo inline-block-display">
+				<a id="logo-image-ancher" href="#"><img id="logo-image" src="music-logo.png" alt="Music Logo" width="60" height="60"></a>
+		
+			</div>
+			<div class="nav-search inline-block-display">
+				<form class="search-box-form inline-block-display">
+					<input type="text"   id="search-box" name="search-box"  placeholder="               Search">
+					<i class="fa fa-search black-color"></i>
+					<i class="fas fa-microphone-alt black-color"></i>
+				</form>				
+			</div>
+			<div class="nav-notification inline-block-display">
+				<a href="#" class="black-color"> <i class="fas fa-bell "></i></a>
+			</div>
+			<div class="nav-account inline-block-display">
+				<img src="account-image.png" class="account-image round-border">
+				<div class="dropdown-content">
+				    <a href="#">My Account</a>
+				    <a href="#">Subscription</a>
+				    <a href="#">Setting</a>
+				    <a href="#">Change Theme</a>
+				</div>
+			</div>
+		</nav>
+		
+		
+	</header>
+	<main id="body-main">
+		<div id="main-left">
+			<section id="banner">
+				<div class="banner-container">
+				    <input type="radio" name="slider" id="item-1" checked>
+				    <input type="radio" name="slider" id="item-2">
+				    <input type="radio" name="slider" id="item-3">
+				  <div class="cards">
+				    <label class="card" for="item-1" id="song-1" >
+				      <img class="banner-image" src="banner1.jpg" alt="song">
+				    </label>
+				    <label class="card" for="item-2" id="song-2" >
+				      <img class="banner-image" src="banner2.jpg" alt="song">
+				    </label>
+				    <label class="card" for="item-3" id="song-3" >
+				      <img class="banner-image" src="banner3.jpg" alt="song">
+				    </label>
+				  </div>
+				  <div class="player">
+				    <div class="upper-part">
+				      <div class="play-icon">
+				        <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+				          <defs/>
+				          <path d="M5 3l14 9-14 9V3z"/>
+				        </svg>
+				      </div>
+				      <div class="info-area" id="test">
+				        <label class="song-info" id="song-info-1">
+				          <div class="title">Bunker</div>
+				          <div class="sub-line">
+				            <div class="subtitle">Balthazar</div>
+				            <div class="time">4.05</div>
+				          </div>
+				        </label>
+				        <label class="song-info" id="song-info-2">
+				          <div class="title">Words Remain</div>
+				          <div class="sub-line">
+				            <div class="subtitle">Moderator</div>
+				            <div class="time">4.05</div>
+				          </div>
+				        </label>
+				        <label class="song-info" id="song-info-3">
+				          <div class="title">Falling Out</div>
+				          <div class="sub-line">
+				            <div class="subtitle">Otzeki</div>
+				            <div class="time">4.05</div>
+				          </div>
+				        </label>
+				      </div>
+				    </div>
+				    <div class="progress-bar">
+				      <span class="progress"></span>
+				    </div>
+				  </div>
+				</div>
+			
+			</section>
+			<section id="latest-release">
+				<h3 class="sub-catogery-text"> Latest Release </h3>
+				<div class="latest-release-container">
+					<div class="latest-release">
+						<div class="lrsong1">
+							<div class="lr-image">
+								<img src="lr1.jpg">
+							</div>
+							<div class="lr-details">
+								<span class="lr-song">
+									<h5>Jannat ve</h5>
+								</span>
+								<span class="lr-date">
+									<p>27 July'21</p>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="latest-release">
+						<div class="lrsong2">
+							<div class="lr-image">
+								<img src="lr2.jpg">
+							</div>
+							<div class="lr-details">
+								<span class="lr-song">
+									<h5>Bachpan Ka Pyar</h5>
+								</span>
+								<span class="lr-date">
+									<p>2 Aug'21</p>
+								</span>
+							</div>
+						</div>
+					</div>	
+					<div class="latest-release">
+						<div class="lrsong3">
+							<div class="lr-image">
+								<img src="lr3.jpg">
+							</div>
+							<div class="lr-details">
+								<span class="lr-song">
+									<h5>Fillhal 2</h5>
+								</span>
+								<span class="lr-date">
+									<p>30 June'21</p>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="latest-release">
+						<div class="lrsong4">
+							<div class="lr-image">
+								<img src="lr4.jpg">
+							</div>
+							<div class="lr-details">
+								<span class="lr-song">
+									<h5>Baarishein</h5>
+								</span>
+								<span class="lr-date">
+									<p>30 June'21</p>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			<section id="popular-artist">
+				<h3 class="sub-catogery-text"> Popular Artists </h3>
+				<div class="pa-details">
+					<div class="pa pa1">
+						<img src="pa1.jpg">
+						<p>B praak</p>
+					</div>
+					<div class="pa pa2">
+						<img src="pa2.jpg">
+						<p>jubin nautiyal</p>					
+					</div>
+					<div class="pa pa3">
+						<img src="pa3.jpg">
+						<p>Ed Sheeran</p>	
+					</div>
+					<div class="pa pa4">
+						<img src="pa4.jpg">
+						<p>Marshmellow</p>					
+					</div>
+					<div class="pa pa5">
+						<img src="pa5.jpg">
+						<p>Arijit Singh</p>					
+					</div>
+					<div class="pa pa6">
+						<img src="pa6.jpg">
+						<p>Darshan Raval</p>					
+					</div>
+				</div>
+				
+			</section>
+			<section id="music-station">
+				<h3 class="sub-catogery-text">Stations</h3>
+				<div class="music-station-container">
+					<div class="ms ms-love">
+						<img src="station1.jpg">
+						<div class="ms-text">Love</div>
+					</div>
+					<div class="ms ms-retro">
+						<img src="station2.jpg">
+						<div class="ms-text">Retro</div>
+					</div>
+					<div class="ms ms-chill">
+						<img src="station3.jpg">
+						<div class="ms-text">Chill</div>
+					</div>
+					<div class="ms ms-workout">
+						<img src="station4.jpg">
+						<div class="ms-text">Workout</div>
+					</div>
+					<div class="ms ms-rock">
+						<img src="station5.jpg">
+						<div class="ms-text">Rock</div>
+					</div>
+					<div class="ms ms-pop">
+						<img src="station6.jpg">
+						<div class="ms-text">Pop</div>
+					</div>
+					<div class="ms ms-classic">
+						<img src="station7.jpg">
+						<div class="ms-text">Classic</div>
+					</div>
+				</div>
+				
+			</section>
+			<section id="music-mood">
+				<h3 class="sub-catogery-text">Moods</h3>
+				<div class="mood-container">
+					<div class="mood-box mb1">
+						<div class="music-box-container">
+							<p class="mood-title">Party</p>
+						</div>
+					</div>
+					<div class="mood-box mb2">
+						<div class="music-box-container">
+							<p class="mood-title">Electronic</p>
+						</div>
+					</div>
+					<div class="mood-box mb3">
+						<div class="music-box-container">
+							<p class="mood-title">Travel</p>
+						</div>
+					</div>					
+				</div>
+				
+			</section>
+			<section id="latest-english">
+				
+			</section>
+			<section id="latest-hindi">
+				
+			</section>
+		</div>
+		<div id="main-right">
+
+			<div class="queue-container">
+				<span class="heading-option">
+					<h3 class="sub-catogery-text"> Queue </h3>
+					<span class="more-options">
+						<a href="#" ><h3>Queue</h3><i class="fas fa-angle-down"></i></a>
+						<div class="drop-box">
+						<ul style="list-style-type:none;" class="drop-box-list">
+							<li class="first-li">
+								<a href="#">Playlist</a>
+							</li>
+							<li>
+								<a href="#">Favourite song</a>
+							</li>
+						</ul>
+					</div>
+					</span>
+				</span>
+				
+				<div class="queue-song">
+					<p>01</p>
+					<img src="makhna.jpg">
+					<div class="song-detail">
+						<p class="song-name">Makhna</p>
+						<p class="singer">Honey Singh</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>02</p>
+					<img src="manbharaya.jpg">
+					<div class="song-detail">
+						<p class="song-name">Mann Bharryaa 2.0</p>
+						<p class="singer">B paraak</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>03</p>
+					<img src="qafirana.jpg">
+					<div class="song-detail">
+						<p class="song-name">Qaafirana</p>
+						<p class="singer">Arijit Singh</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>04</p>
+					<img src="wdtam.jpg">
+					<div class="song-detail">
+						<p class="song-name">We Don't Talk Anymore</p>
+						<p class="singer">Charlie Puth</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>05</p>
+					<img src="slt.png">
+					<div class="song-detail">
+						<p class="song-name">Something Just Like This</p>
+						<p class="singer">Chain Smoker</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>06</p>
+					<img src="lutgaye.jpg">
+					<div class="song-detail">
+						<p class="song-name">Lut Gaye</p>
+						<p class="singer">Jubin Nautiyal</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>07</p>
+					<img src="shimla.jpg">
+					<div class="song-detail">
+						<p class="song-name">Shimla Tha Ghar</p>
+						<p class="singer">Deepak Rathore</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>01</p>
+					<img src="makhna.jpg">
+					<div class="song-detail">
+						<p class="song-name">Makhna</p>
+						<p class="singer">Honey Singh</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>02</p>
+					<img src="manbharaya.jpg">
+					<div class="song-detail">
+						<p class="song-name">Mann Bharryaa 2.0</p>
+						<p class="singer">B paraak</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>03</p>
+					<img src="qafirana.jpg">
+					<div class="song-detail">
+						<p class="song-name">Qaafirana</p>
+						<p class="singer">Arijit Singh</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>04</p>
+					<img src="wdtam.jpg">
+					<div class="song-detail">
+						<p class="song-name">We Don't Talk Anymore</p>
+						<p class="singer">Charlie Puth</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>05</p>
+					<img src="slt.png">
+					<div class="song-detail">
+						<p class="song-name">Something Just Like This</p>
+						<p class="singer">Chain Smoker</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>06</p>
+					<img src="lutgaye.jpg">
+					<div class="song-detail">
+						<p class="song-name">Lut Gaye</p>
+						<p class="singer">Jubin Nautiyal</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				<div class="queue-song">
+					<p>07</p>
+					<img src="shimla.jpg">
+					<div class="song-detail">
+						<p class="song-name">Shimla Tha Ghar</p>
+						<p class="singer">Deepak Rathore</p>
+					</div>
+					<i class="fas fa-heart queue-like"></i>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		
+	</main>
+	<footer class="body-footer">
+		<div id="footer-container">
+			<div id="current-music">
+				<img src="cm.jpg">
+				<div id="cm-details">
+					<span id="cm-name">Naadan parindey</span>
+					<span id="cm-singer">Mohit Chauhan</span>
+				</div>
+
+				<div id="like">
+					<i class="fa fa-heart like"></i>
+					&#160;&#160;
+					<i class="fas fa-volume-mute like"></i>
+					
+				</div>
+			</div>
+			<div id="music-control">
+				<span id="mc-buttons">
+					<i class="fas fa-random controller"></i>
+					<i class="fas fa-step-backward controller"></i>
+					<i class="far fa-pause-circle controller"></i>
+					<i class="fas fa-step-forward controller"></i>
+					<i class="fas fa-redo controller"></i>
+				</span>
+				<i id="play-button" class="fas fa-play controller"></i>
+				<span id="mc-progress">
+					<span class="mc-start"></span>
+				    <div class="mc-progress-bar">
+				      <div class="mc-now"></div>
+				    </div>
+				    <span class="mc-end"></span>
+				</span>
+
+			</div>
+			<div id="audio-details">
+				<div id="audio-details-container">
+					<span class="ad-buttons"> <i class="fas fa-stream"></i> </span>
+					<span class="ad-buttons"> <i class="fas fa-headphones"></i></span>
+					<span class="ad-buttons"><i class="fas fa-volume-off"></i></span>
+					<span class="ad-buttons ad-progress"> 
+						<span class="ad-start"></span>
+				    	<div class="ad-progress-bar">
+				      		<div class="ad-now"></div>
+				    	</div>
+				   		<span class="ad-end"></span>
+						</span>
+					<span class="ad-buttons"> <i class="fas fa-expand-alt"></i></span>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	
+</body>
+</html>
+
